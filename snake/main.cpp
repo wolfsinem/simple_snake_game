@@ -25,7 +25,6 @@ struct snake{
     int x,y;
 }s[100]; //de maximale lengte van de worm, array stores location of each part of snake
 
-
 struct Fruit{ //fruit location
     int x,y;
 }f;
@@ -52,7 +51,6 @@ void Tick()
         f.y=rand() % M;
     }
     
-
     for (int i=1;i<=num;i++)
         if ((s[0].x==s[i].x) && (s[0].y==s[i].y)) //if snake eats itself
         {
